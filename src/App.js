@@ -1,10 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import * as React from 'react';
+import BasicTabs from './components/Tablist'
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        
+     <BasicTabs></BasicTabs>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -23,3 +29,4 @@ function App() {
 }
 
 export default App;
+
