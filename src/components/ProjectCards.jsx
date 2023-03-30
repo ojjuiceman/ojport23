@@ -5,6 +5,7 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
+import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 
 export default function TitlebarImageList() {
   return (
@@ -31,7 +32,7 @@ export default function TitlebarImageList() {
                 href={item.link}
               >
                 
-                <InfoIcon />
+                <OpenInBrowserIcon></OpenInBrowserIcon>
               </IconButton>
             }
           />
@@ -53,34 +54,41 @@ const itemData = [
   {
     img: 'https://i.ibb.co/93WnLNw/Watermarke.png',
     title: 'Watermarke Data Analytics Site',
+    link: 'https://watermarke.netlify.app/'
   },
   {
     img: 'https://i.ibb.co/xDbcyxM/Site.png',
     title: 'Trivia Site',
+    link: 'https://ojtriv.onrender.com/Registration'
   },
   {
     img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
     title: 'Food Buckets Site',
     cols: 2,
+    link: 'https://github.com/ojpushpull/BucketsOfFoodsList'
   },
   
   {
     img: 'https://i.ibb.co/WsLR8g7/Pet-store-3.png',
     title: 'Dog Care Store',
+    link: 'https://www.dogcare.cc'
   },
   {
     img: 'https://i.ibb.co/frf4rs2/Okera-Tech-Blog.png',
     title: 'Okera Tech Blog',
     rows: 2,
     cols: 2,
+    link: 'https://okerajohnson.com'
   },
   {
     img: 'https://i.ibb.co/j6nZ8Kj/Heading-6.png',
     title: 'Web Service Site',
+    link: 'https://ojovertime.xyz/'
   },
   {
     img: 'https://i.ibb.co/v3K6Ky9/API-Mongo-DB.png',
     title: 'API & Mongo Database Implementation',
+    link: 'https://github.com/ojpushpull/ojhabs'
   },
 
 
