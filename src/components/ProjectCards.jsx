@@ -19,14 +19,18 @@ export default function TitlebarImageList() {
             srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
             alt={item.title}
             loading="lazy"
+        
           />
+         
           <ImageListItemBar
             title={item.title}
             actionIcon={
               <IconButton
                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                 aria-label={`info about ${item.title}`}
+                href={item.link}
               >
+                
                 <InfoIcon />
               </IconButton>
             }
@@ -44,6 +48,7 @@ const itemData = [
     rows: 2,
     cols: 2,
     featured: true,
+    link: 'https://github.com/ojpushpull/jay4'
   },
   {
     img: 'https://i.ibb.co/93WnLNw/Watermarke.png',
