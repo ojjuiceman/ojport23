@@ -3,6 +3,7 @@ import './App.css';
 import * as React from 'react';
 import BasicTabs from './components/Tablist'
 import TitlebarImageList from './components/ProjectCards';
+import InteractiveList from './components/Languages';
 
 
 
@@ -12,6 +13,7 @@ function App() {
     
       <header className="App-header">
         <BasicTabs></BasicTabs>
+        <InteractiveList></InteractiveList>
      <TitlebarImageList></TitlebarImageList>
         <img src={logo} className="App-logo" alt="logo" />
         <p>

@@ -56,27 +56,45 @@ export default function InteractiveList() {
       </FormGroup>
       <Grid item xs={12} md={6}>
           <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-            Icon with text
+           Programming Languages
           </Typography>
           <Demo>
             <List dense={dense}>
-              {generate(
+              
                 <ListItem>
                   <ListItemIcon>
                     <FolderIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Single-line item"
+                    primary="Javascript"
+                    secondary={secondary ? 'Secondary text' : null}
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemIcon>
+                    <FolderIcon />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="React"
+                    secondary={secondary ? 'Secondary text' : null}
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemIcon>
+                    <FolderIcon />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="HTML"
                     secondary={secondary ? 'Secondary text' : null}
                   />
                 </ListItem>,
-              )}
+              
             </List>
           </Demo>
         </Grid>
         <Grid item xs={12} md={6}>
           <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-            Icon with text
+            Programming Tools
           </Typography>
           <Demo>
             <List dense={dense}>
